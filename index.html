@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        text-align: center;
+        background-color: rgb(15, 22, 32);
+      }
+      #form {
+        background-color: rgb(15, 22, 32);
+        height: 800px;
+        color: white;
+        padding: 10px;
+      }
+      @media screen and (min-width: 423px) {
+        #txt-a,
+        #txt-b {
+          display: flex;
+        }
+        #form-b {
+          display: flex;
+          justify-content: space-around;
+          margin: 0px 50px;
+        }
+        #form-bc {
+          display: flex;
+          align-items: center;
+          flex-direction: unset;
+          margin: 0px 300px;
+        }
+      }
+
+      h1 {
+        font-size: 250%;
+      }
+      #form-a-line {
+        margin: 10px auto;
+        width: 40px;
+        height: 2px;
+        background: linear-gradient(110deg, red 60%, blue 60%);
+        border: 0px;
+      }
+      #form-logo {
+        display: inline-flex;
+        justify-content: space-around;
+        font-size: 150%;
+      }
+      #form-p {
+        display: flex;
+        font-size: 20px;
+        margin: 15px 0px;
+      }
+      #form-b {
+        margin: 0px;
+      }
+      #txt-a,
+      #txt-b {
+        width: 310px;
+        height: 35px;
+        border: 1px solid yellow;
+        border-radius: 18px;
+        margin-bottom: 30px;
+        font-size: 120%;
+        padding: 0px 10px;
+        background-color: white;
+        color: black;
+        border: 1px solid white;
+      }
+      #txt-b {
+        margin-bottom: 0px;
+      }
+      #form-bc {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0px;
+        margin-bottom: 35px;
+      }
+      #form-c {
+        display: flex;
+      }
+      #submit {
+        width: 260px;
+        height: 35px;
+        border-radius: 25px;
+        margin: 20px 0px 0px 0px;
+        background-color: white;
+        color: black;
+        border: 1px solid white;
+      }
+      #submit:hover {
+        width: 300px;
+        height: 37px;
+        border-radius: 20px;
+        margin: 20px 0px 0px 0px;
+        background-color: black;
+        border: 1px solid white;
+        color: white;
+      }
+      #form-d {
+        justify-content: space-between;
+      }
+    </style>
+    <script
+      src="https://kit.fontawesome.com/3d36bdba97.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="form">
+      <div id="form-a-roll">
+        <h1>Log in</h1>
+        <div id="form-a-line"></div>
+        <div id="form-logo">
+          <div id="twitter">
+            <a
+              target="_blank"
+              href="https://twitter.com/tribby08"
+              style="color: white"
+              ><i class="fa-brands fa-twitter">&nbsp;&nbsp;</i></a
+            >
+          </div>
+          <div id="github">
+            <a href="https://github.com/mohawwal" style="color: white"
+              ><i class="fa-brands fa-github">&nbsp;&nbsp;</i></a
+            >
+          </div>
+          <div id="gmail">
+            <a target="_blank" href="https://google.com/" style="color: white"
+              ><i class="fa-brands fa-google"></i
+            ></a>
+          </div>
+        </div>
+        <p>or login using email</p>
+      </div>
+      <div id="form-b">
+        <div>
+          <p id="form-p">Email</p>
+          <input id="txt-a" type="email" />
+        </div>
+        <div>
+          <p id="form-p">Password</p>
+          <input id="txt-b" type="password" />
+        </div>
+      </div>
+      <div id="form-bc">
+        <div id="form-c">
+          <input type="checkbox" />
+          <p>Remember Me</p>
+        </div>
+        <div>
+          <p id="fp">Forget Password?</p>
+        </div>
+      </div>
+      <input id="submit" type="submit" />
+      <div id="form-d">
+        <div>
+          <p>Private Policy</p>
+        </div>
+        <div>
+          <p>Terms & Condition</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
